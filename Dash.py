@@ -96,7 +96,7 @@ def render_leaderboard(df):
         • 349 Barbell, Salisbury  
         • Iron Warehouse Gym, Great Yarmouth  
 
-        Current Results
+        Current Included Results  
         19/10/25 - Raw Strength Novice, Warrington
         
         Competitive Year:  
@@ -145,6 +145,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
