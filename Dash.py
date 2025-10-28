@@ -93,8 +93,9 @@ def render_leaderboard(df):
         **Novice League Event Locations:**  
         • Nottingham Strong, Nottingham  
         • Raw Strength Gym, Warrington  
-        • 349 Barbell, Salisbury  
+        • 349 Barbell, Salisbury
         • Iron Warehouse Gym, Great Yarmouth
+        
         Competitive Year:  
         The Novice League season runs from October 1st to September 30th each year.  
         ---
@@ -141,6 +142,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
