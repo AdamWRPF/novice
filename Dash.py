@@ -97,7 +97,12 @@ def render_leaderboard(df):
         • Iron Warehouse Gym, Great Yarmouth  
 
         Current Included Results  
-        19/10/25 - Raw Strength Novice, Warrington
+        19/10/25 - Raw Strength Novice, Warrington  
+
+        Upcoming Novice Events  
+        1/11/25 - Nottingham Strong Novice, Nottingham  
+        16/11/25 - East Coast Novice, Great Yarmouth - ENTER www.wrpf.uk/east-coast-novice
+        29/3/26 - Nottingham Strong Novice, Nottingham - ENTER www.wrpf.uk/nso
         
         Competitive Year:  
         The Novice League season runs from October 1st to September 30th each year.  
@@ -145,6 +150,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
