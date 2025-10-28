@@ -104,8 +104,7 @@ def render_leaderboard(df):
         16/11/25 - East Coast Novice, Great Yarmouth - ENTER www.wrpf.uk/east-coast-novice  
         29/3/26 - Nottingham Strong Novice, Nottingham - ENTER www.wrpf.uk/nso  
         
-        Competitive Year:  
-        The Novice League season runs from October 1st to September 30th each year.  
+        Competitive Year runs from October 1st 2025 to September 30th 2026.  
         ---
         """,
         unsafe_allow_html=True,
@@ -150,6 +149,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
