@@ -95,6 +95,9 @@ def render_leaderboard(df):
         • Raw Strength Gym, Warrington  
         • 349 Barbell, Salisbury  
         • Iron Warehouse Gym, Great Yarmouth  
+
+        Current Results
+        19/10/25 - Raw Strength Novice, Warrington
         
         Competitive Year:  
         The Novice League season runs from October 1st to September 30th each year.  
@@ -142,6 +145,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
