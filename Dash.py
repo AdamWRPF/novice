@@ -2,14 +2,8 @@ import pandas as pd
 import streamlit as st
 from pathlib import Path
 
-# ---------------------------------------------------------
-# Config
-# ---------------------------------------------------------
 CSV_PATH = Path(__file__).with_name("Novice.csv")
 
-# ---------------------------------------------------------
-# Load and clean data
-# ---------------------------------------------------------
 @st.cache_data
 def load_data(path: Path) -> pd.DataFrame:
     df = pd.read_csv(path)
@@ -20,9 +14,6 @@ def load_data(path: Path) -> pd.DataFrame:
     df["Date"] = pd.to_datetime(df["Date"], errors="coerce", dayfirst=True)
     return df
 
-# ---------------------------------------------------------
-# Determine Division by Age + Sex
-# ---------------------------------------------------------
 def assign_division(row):
     if pd.isna(row["Age"]):
         return None
@@ -36,9 +27,6 @@ def assign_division(row):
     gender = "Men" if str(row["Sex"]).strip().upper().startswith("M") else "Women"
     return f"{div} {gender}"
 
-# ---------------------------------------------------------
-# Apply Novice League rules
-# ---------------------------------------------------------
 def process_novice(df):
     df = df.copy()
     df["Division"] = df.apply(assign_division, axis=1)
@@ -61,9 +49,6 @@ def process_novice(df):
     agg["Rank"] = agg.groupby("Division")["Dots"].rank(ascending=False, method="min")
     return agg
 
-# ---------------------------------------------------------
-# Display leaderboard
-# ---------------------------------------------------------
 def render_leaderboard(df):
     # Center and size the content nicely
     st.markdown(
@@ -138,9 +123,6 @@ def render_leaderboard(df):
                     key=div,
                 )
 
-# ---------------------------------------------------------
-# Main
-# ---------------------------------------------------------
 def main():
     st.set_page_config("WRPF UK Novice League", layout="wide")
     df = load_data(CSV_PATH)
@@ -149,6 +131,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
