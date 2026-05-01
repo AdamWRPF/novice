@@ -81,13 +81,8 @@ def render_leaderboard(df):
         • 349 Barbell, Salisbury  
         • Iron Warehouse Gym, Great Yarmouth  
 
-        Current Included Results  
-        19/10/25 - Raw Strength Novice, Warrington  
-
         Upcoming Novice Events  
-        1/11/25 - Nottingham Strong Novice, Nottingham  
-        16/11/25 - East Coast Novice, Great Yarmouth - ENTER www.wrpf.uk/east-coast-novice  
-        29/3/26 - Nottingham Strong Novice, Nottingham - ENTER www.wrpf.uk/nso  
+        www.wrpf.uk/events
         
         Competitive Year runs from October 1st 2025 to September 30th 2026.  
         ---
